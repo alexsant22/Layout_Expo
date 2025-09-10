@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 
 export default function PerfilScreen() {
   return (
-    <View style={StyleSheetList.container}>
+    <View style={styles.container}>
       <Text style={styles.title}>Tela de Perfil</Text>
       <Text style={styles.text}>Abra o menu Lateral</Text>
     </View>

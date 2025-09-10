@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 
 export default function HomeScreen() {
   return (
-    <View style={StyleSheetList.container}>
+    <View style={styles.container}>
       <Text style={styles.title}>Tela de Início</Text>
       <Text style={styles.text}>Abra o menu Lateral</Text>
     </View>
