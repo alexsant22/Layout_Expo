@@ -11,6 +11,7 @@ import Menu from "./src/components/Menu";
 import HomeScreen from "./src/screens/HomeScreen";
 import ConfigScreen from "./src/screens/ConfigScreen";
 import PerfilScreen from "./src/screens/PerfilScreen";
+import Gestual1Screen from "./src/screens/Gestual1";
 
 const Drawer = createDrawerNavigator();
 
@@ -43,6 +44,12 @@ export default function App() {
           name="Perfil"
           component={PerfilScreen}
           options={{ title: "Perfil" }}
+        />
+
+        <Drawer.Screen
+          name="Gestual"
+          component={Gestual1Screen}
+          options={{ title: "Gestual" }}
         />
       </Drawer.Navigator>
     </NavigationContainer>
