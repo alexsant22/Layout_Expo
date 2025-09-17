@@ -13,6 +13,8 @@ import ConfigScreen from "./src/screens/ConfigScreen";
 import PerfilScreen from "./src/screens/PerfilScreen";
 import Gestual1Screen from "./src/screens/Gestual1";
 import RotationScreen from "./src/screens/RotationScreen";
+import PitchZoomScreen from "./src/screens/PitchZoomScreen";
+import LongPressScreen from "./src/screens/LongPressScreen";
 
 const Drawer = createDrawerNavigator();
 
@@ -57,6 +59,18 @@ export default function App() {
           name="Rotação"
           component={RotationScreen}
           options={{ title: "Rotação" }}
+        />
+
+        <Drawer.Screen
+          name="Zoom"
+          component={PitchZoomScreen}
+          options={{ title: "Zoom" }}
+        />
+
+        <Drawer.Screen
+          name="Long Press"
+          component={LongPressScreen}
+          options={{ title: "Long Press" }}
         />
       </Drawer.Navigator>
     </NavigationContainer>
