@@ -15,6 +15,7 @@ import Gestual1Screen from "./src/screens/Gestual1";
 import RotationScreen from "./src/screens/RotationScreen";
 import PitchZoomScreen from "./src/screens/PitchZoomScreen";
 import LongPressScreen from "./src/screens/LongPressScreen";
+import FlatListScreen from "./src/screens/FlatList";
 
 const Drawer = createDrawerNavigator();
 
@@ -71,6 +72,11 @@ export default function App() {
           name="Long Press"
           component={LongPressScreen}
           options={{ title: "Long Press" }}
+        />
+        <Drawer.Screen
+          name="FlatList"
+          component={FlatListScreen}
+          options={{ title: "FlatList" }}
         />
       </Drawer.Navigator>
     </NavigationContainer>
