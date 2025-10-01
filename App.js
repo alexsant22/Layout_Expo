@@ -16,6 +16,7 @@ import RotationScreen from "./src/screens/RotationScreen";
 import PitchZoomScreen from "./src/screens/PitchZoomScreen";
 import LongPressScreen from "./src/screens/LongPressScreen";
 import FlatListScreen from "./src/screens/FlatList";
+import LocationScreen from "./src/screens/LocationScreen";
 
 const Drawer = createDrawerNavigator();
 
@@ -77,6 +78,11 @@ export default function App() {
           name="FlatList"
           component={FlatListScreen}
           options={{ title: "FlatList" }}
+        />
+        <Drawer.Screen
+          name="Localização"
+          component={LocationScreen}
+          options={{ title: "Localização" }}
         />
       </Drawer.Navigator>
     </NavigationContainer>
