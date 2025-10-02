@@ -19,6 +19,7 @@ import FlatListScreen from "./src/screens/FlatList";
 import LocationScreen from "./src/screens/LocationScreen";
 import SomScreen from "./src/screens/SomScreen";
 import MapaScreen from "./src/screens/MapaScreen";
+import PersistenciaDadosScreen from "./src/screens/PersistenciaDadosScreen";
 
 const Drawer = createDrawerNavigator();
 
@@ -95,6 +96,11 @@ export default function App() {
           name="Mapa"
           component={MapaScreen}
           options={{ title: "Mapa" }}
+        />
+        <Drawer.Screen
+          name="Persistência de Dados"
+          component={PersistenciaDadosScreen}
+          options={{ title: "Persistência de Dados" }}
         />
       </Drawer.Navigator>
     </NavigationContainer>
