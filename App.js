@@ -17,6 +17,7 @@ import PitchZoomScreen from "./src/screens/PitchZoomScreen";
 import LongPressScreen from "./src/screens/LongPressScreen";
 import FlatListScreen from "./src/screens/FlatList";
 import LocationScreen from "./src/screens/LocationScreen";
+import SomScreen from "./src/screens/SomScreen";
 
 const Drawer = createDrawerNavigator();
 
@@ -83,6 +84,11 @@ export default function App() {
           name="Localização"
           component={LocationScreen}
           options={{ title: "Localização" }}
+        />
+        <Drawer.Screen
+          name="Som"
+          component={SomScreen}
+          options={{ title: "Som" }}
         />
       </Drawer.Navigator>
     </NavigationContainer>
