@@ -21,6 +21,7 @@ import SomScreen from "./src/screens/SomScreen";
 import MapaScreen from "./src/screens/MapaScreen";
 import PersistenciaDadosScreen from "./src/screens/PersistenciaDadosScreen";
 import CameraScreen from "./src/screens/CameraScreen";
+import SensorAcelerometro from "./src/screens/SensorAcelerometro";
 
 const Drawer = createDrawerNavigator();
 
@@ -107,6 +108,11 @@ export default function App() {
           name="Câmera"
           component={CameraScreen}
           options={{ title: "Câmera" }}
+        />
+        <Drawer.Screen
+          name="Acelerômetro"
+          component={SensorAcelerometro}
+          options={{ title: "Acelerômetro" }}
         />
       </Drawer.Navigator>
     </NavigationContainer>
