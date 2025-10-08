@@ -20,6 +20,7 @@ import LocationScreen from "./src/screens/LocationScreen";
 import SomScreen from "./src/screens/SomScreen";
 import MapaScreen from "./src/screens/MapaScreen";
 import PersistenciaDadosScreen from "./src/screens/PersistenciaDadosScreen";
+import CameraScreen from "./src/screens/CameraScreen";
 
 const Drawer = createDrawerNavigator();
 
@@ -101,6 +102,11 @@ export default function App() {
           name="Persistência de Dados"
           component={PersistenciaDadosScreen}
           options={{ title: "Persistência de Dados" }}
+        />
+        <Drawer.Screen
+          name="Câmera"
+          component={CameraScreen}
+          options={{ title: "Câmera" }}
         />
       </Drawer.Navigator>
     </NavigationContainer>
