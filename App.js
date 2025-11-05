@@ -24,6 +24,10 @@ import CameraScreen from "./src/screens/CameraScreen";
 import SensorAcelerometro from "./src/screens/SensorAcelerometro";
 import NetScreen from "./src/screens/NetSreen";
 import GpsApp from "./src/screens/GpsApp";
+import GestualAtv1 from "./src/screens/GestualAtv1";
+import GestualAtv2 from "./src/screens/GestualAtv2";
+import GestualAtv3 from "./src/screens/GestualAtv3";
+import GestualAtv4 from "./src/screens/GestualAtv4";
 
 const Drawer = createDrawerNavigator();
 
@@ -125,6 +129,26 @@ export default function App() {
           name="GPS"
           component={GpsApp}
           options={{ title: "GPS" }}
+        />
+        <Drawer.Screen
+          name="Atividade Gestual 1"
+          component={GestualAtv1}
+          options={{ title: "Atividade Gestual 1" }}
+        />
+        <Drawer.Screen
+          name="Atividade Gestual 2"
+          component={GestualAtv2}
+          options={{ title: "Atividade Gestual 2" }}
+        />
+        <Drawer.Screen
+          name="Atividade Gestual 3"
+          component={GestualAtv3}
+          options={{ title: "Atividade Gestual 3" }}
+        />
+        <Drawer.Screen
+          name="Atividade Gestual 4"
+          component={GestualAtv4}
+          options={{ title: "Atividade Gestual 4" }}
         />
       </Drawer.Navigator>
     </NavigationContainer>
