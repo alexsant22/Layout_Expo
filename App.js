@@ -23,6 +23,7 @@ import PersistenciaDadosScreen from "./src/screens/PersistenciaDadosScreen";
 import CameraScreen from "./src/screens/CameraScreen";
 import SensorAcelerometro from "./src/screens/SensorAcelerometro";
 import NetScreen from "./src/screens/NetSreen";
+import GpsApp from "./src/screens/GpsApp";
 
 const Drawer = createDrawerNavigator();
 
@@ -119,6 +120,11 @@ export default function App() {
           name="Monitor de Rede"
           component={NetScreen}
           options={{ title: "Monitor de Rede" }}
+        />
+        <Drawer.Screen
+          name="GPS"
+          component={GpsApp}
+          options={{ title: "GPS" }}
         />
       </Drawer.Navigator>
     </NavigationContainer>
