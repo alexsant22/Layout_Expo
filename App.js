@@ -22,6 +22,7 @@ import MapaScreen from "./src/screens/MapaScreen";
 import PersistenciaDadosScreen from "./src/screens/PersistenciaDadosScreen";
 import CameraScreen from "./src/screens/CameraScreen";
 import SensorAcelerometro from "./src/screens/SensorAcelerometro";
+import NetScreen from "./src/screens/NetSreen";
 
 const Drawer = createDrawerNavigator();
 
@@ -113,6 +114,11 @@ export default function App() {
           name="Acelerômetro"
           component={SensorAcelerometro}
           options={{ title: "Acelerômetro" }}
+        />
+        <Drawer.Screen
+          name="Monitor de Rede"
+          component={NetScreen}
+          options={{ title: "Monitor de Rede" }}
         />
       </Drawer.Navigator>
     </NavigationContainer>
